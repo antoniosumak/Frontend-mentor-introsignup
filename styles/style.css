@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pozadina {
+  background: #ff7a7a;
+  background-image: url(/images/bg-intro-desktop.png);
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.col1,
+.col2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  padding-right: 80px;
+}
+
+.col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col2 .kartica {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.col2 .kartica p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #b9b6d3;
+  padding: 0;
+}
+
+.col2 .kartica input {
+  outline: none;
+  border: 1px #b9b6d3 solid;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-bottom: 5px;
+}
+
+.col2 .kartica ::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.col2 .kartica :-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.col2 .kartica ::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.col2 .kartica ::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.col2 .kartica button {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #38cc8c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  border-bottom: 5px #279163 solid;
+}
+
+.col2 .kartica button:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.col2 .kartica .terms {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.col2 .trial {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #6055a5;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 3px 0px;
+}
+
+.col2 .trialce {
+  font-weight: 400;
+}
+
+#label {
+  color: #ff7a7a;
+  padding-bottom: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+#label2 {
+  color: #ff7a7a;
+  padding-bottom: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+#label3 {
+  color: #ff7a7a;
+  padding-bottom: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+#label4 {
+  color: #ff7a7a;
+  padding-bottom: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .col1 {
+    text-align: center;
+  }
+  .col1 h1 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-top: 100px;
+  }
+  .col1 p {
+    padding-right: 0;
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+  .kartica {
+    padding: 20px !important;
+  }
+  .trial {
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
